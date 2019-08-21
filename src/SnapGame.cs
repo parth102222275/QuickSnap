@@ -27,6 +27,23 @@ namespace CardGames
 			{
                 myGame.Start();
 			}
+
+            if(myGame.isStared)
+            {
+                if( (SwinGame.KeyTyped)(Keycode.vk_LSHIFT) && (SwinGame.KeyTyped)(Keycode.vk_RSHIFT))
+                        {
+                            
+                        }
+                else if ((SwinGame.KeyTyped) (Keycode.vk_LSHIFT))
+                    {
+                       myGame.PlayerHit(0);
+                    }
+
+                else if (SwinGame.KeyTyped) (Keycode.vk_RSHIFT))
+                    {
+                      myGame.PlayerHit(1);
+                    }
+            }
 		}
 
 		/// <summary>
