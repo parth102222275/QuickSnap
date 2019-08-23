@@ -31,14 +31,16 @@ namespace CardGames
             {
                 if( (SwinGame.KeyTyped)(Keycode.vk_LSHIFT) && (SwinGame.KeyTyped)(Keycode.vk_RSHIFT))
                         {
-                            
+                         Music song = new Music("piano.mp3");
+                    song.Play();
+                    
                         }
                 else if ((SwinGame.KeyTyped) (Keycode.vk_LSHIFT))
                     {
                        myGame.PlayerHit(0);
                     }
 
-                else if (SwinGame.KeyTyped) (Keycode.vk_RSHIFT))
+                else if ((SwinGame.KeyTyped) (Keycode.vk_RSHIFT))
                     {
                       myGame.PlayerHit(1);
                     }
